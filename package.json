@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "engines": {
-      "node": "6.11.0"
+      "node": "6.11.0",
+      "npm": "3.10.10"
   },
   "keywords": [
     "heroku",
