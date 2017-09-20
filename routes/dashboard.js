@@ -170,13 +170,16 @@ router.post('/quizzes/:quiz', function(req, res) {
                 req.user.save();
 
             });
+            var videoId = getId(lesson.video_url);
+            lesson.video_url = '//www.youtube.com/embed/'+videoId;
+            var data = {
+                lesson: lesson,
+                user: req.user
+            }
+            res.render('dashboard/lesson', data);
         });
-        // var data = {
-        //     lesson: lesson,
-        //     user: req.user
-        // }
-        // res.render('dashboard/lesson', data);
-        res.send("Hey");
+
+        //res.send("Hey");
     });
 
 });
