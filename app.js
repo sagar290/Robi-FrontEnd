@@ -15,7 +15,7 @@ mongoose.connect(configDB.url);
 var app = express();
 
 
-var port = 3030 || process.env.PORT;
+var port = process.env.PORT || 3030;
 
 var index = require('./routes/index');
 var login = require('./routes/login');
