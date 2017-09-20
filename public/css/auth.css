@@ -2,6 +2,12 @@ form {
   padding: 20px;
 }
 
+.mdl-layout__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .mdl-card {
     margin: auto auto;
 }

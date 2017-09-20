@@ -1,0 +1,16 @@
+.mdl-layout__content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row wrap;
+}
+
+img.logo {
+    max-width: 50%;
+}
+
+h1 {
+    margin: auto;
+    margin-top: 20%;
+    color: #ccc;
+}

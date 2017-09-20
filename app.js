@@ -54,6 +54,10 @@ app.use('/login', login);
 app.use('/register', register);
 app.use('/dashboard', dashboard);
 
+app.get('*', function(req, res){
+  res.render('404');
+});
+
 app.listen(port, function() {
     console.log('Server running on port '+ port);
 });

@@ -28,7 +28,6 @@ router.get('/', function(req, res) {
             }
             courseFound = false;
         });
-        console.log(req.user);
         var data = {
             user: req.user,
             courses: courses,
