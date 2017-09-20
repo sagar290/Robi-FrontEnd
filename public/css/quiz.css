@@ -1,0 +1,26 @@
+.mdl-layout__content {
+    text-align: center;
+    min-width: 100%;
+    padding: 200px 0px;
+}
+
+img.logo {
+    max-width: 50%;
+}
+
+.quizcard {
+    margin: 20px auto;
+    min-width: 50%;
+}
+
+.mdl-radio {
+    margin: 10px;
+    text-align: left;
+    display: block;
+}
+
+@media(max-width: 767px) {
+    .mdl-layout__content {
+        padding: 100px 0px;
+    }
+}

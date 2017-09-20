@@ -1,0 +1,9 @@
+extends ../layout
+block styles
+    link(rel='stylesheet', href='/css/quiz.css')
+block content
+    form(method='post', actions='/quizzes/'+quiz.id)
+      each question,index in quiz.questions
+        include quizcard
+      button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored(type='submit')
+        | Submit

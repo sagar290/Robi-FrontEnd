@@ -1,0 +1,16 @@
+table.mdl-data-table.mdl-js-data-table.mdl-shadow--2dp
+  thead
+    tr
+      th.table-header.mdl-data-table__cell--non-numeric Lesson Name
+      th.table-header Status
+  tbody
+    each lesson in lessons
+        tr
+          td.mdl-data-table__cell--non-numeric
+              a(class='lesson-link' href='/dashboard/lessons/'+lesson.id) #{course.course_name} #{lesson.lesson_name}
+          td
+              if (started && lessonsComplete.indexOf(lesson.id) != -1)
+                  i.fa.fa-check-circle(class='complete' area-hidden='true')  
+              else
+                  i.fa.fa-check-circle-o(class='noncomplete' area-hidden='true')  
+    

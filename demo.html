@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="public/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Material Design -->
+    <link rel="stylesheet" href="public/css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-lg-3">
+            <div class="course-card demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text">Update</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Updates
+    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-lg-3">
+            <div class="course-card demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text">Update</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Updates
+    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-lg-3">
+            <div class="course-card demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <img class="course-image" src="public/img/easy-load.png" alt="basic-sales">
+                </div>
+                <div class="course-info-holder">
+                    <span class="course-text">Easy Load</span>
+                </div>
+
+                <div class="course-info-holder progress-holder">
+                    <h6>44%</h6>
+                    <div id='p1' class="mdl-progress mdl-js-progress">
+
+                    </div>
+
+                    <script>
+  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(44);
+  });
+</script>
+                </div>
+                <div class="mdl-card__actions course-info-holder mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Continue Course
+    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-lg-3">
+            <div class="course-card demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <img class="course-image" src="public/img/basic-sales.png" alt="basic-sales">
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Updates
+    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="public/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="public/libs/dist/js/bootstrap.min.js"></script>
+    <!-- Material JS -->
+    <script src="public/js/material.min.js"></script>
+
+
+</body>
+
+</html>

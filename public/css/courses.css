@@ -1,0 +1,48 @@
+
+.mdl-card__title {
+    text-align: center;
+}
+
+.mdl-layout__title > img.logo {
+    max-width: 50%;
+}
+
+.course-card {
+    margin: 10px;
+    max-width: 20%;
+}
+
+.course-card > .course-info-holder {
+    text-align: center;
+}
+
+.progress-holder {
+    padding: 0px 16px;
+}
+
+.course-image {
+    margin: auto;
+    max-width: 100%;
+}
+
+main.mdl-layout__content {
+    padding-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+@media(max-width: 767px) {
+    .course-card {
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    main.mdl-layout__content {
+
+        justify-content: space-around;
+
+    }
+}

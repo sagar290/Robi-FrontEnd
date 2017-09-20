@@ -1,0 +1,7 @@
+extends ../layout
+block content
+    h2 #{course.course_name}
+    img(id='course_image' src=course.thumbnail_image)
+    include lessons
+block styles
+    link(rel='stylesheet' href='/css/lessons.css')

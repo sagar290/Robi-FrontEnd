@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title
+    // Bootstrap
+    link(rel='stylesheet', href='/libs/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/font-awesome/css/font-awesome.min.css')
+    // Material Design
+    link(rel='stylesheet', href='/css/material.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='https://code.getmdl.io/1.3.0/material.red-deep_purple.min.css')
+    link(rel='stylesheet', href='https://cdn.rawgit.com/kybarg/mdl-selectfield/mdl-menu-implementation/mdl-selectfield.min.css')
+    link(rel='stylesheet', href='/css/auth.css')
+  body
+    block content
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='/libs/jquery/dist/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='/libs/dist/js/bootstrap.min.js')
+    // Form Validator
+    script(src='/plugins/bootstrap-validator/dist/validator.min.js')
+    // Material JS
+    script(src='/js/material.min.js')
+    script(src='https://cdn.rawgit.com/kybarg/mdl-selectfield/mdl-menu-implementation/mdl-selectfield.min.js')

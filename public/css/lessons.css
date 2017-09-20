@@ -1,0 +1,52 @@
+.mdl-layout__content {
+    text-align: center;
+    min-width: 100%;
+    padding: 100px 0px;
+}
+
+.mdl-card__title {
+    text-align: center;
+}
+
+.mdl-layout__title > img.logo {
+    max-width: 50%;
+}
+
+#course_image {
+    max-width: 15%;
+    margin-bottom: 50px;
+}
+
+table {
+    margin: auto;
+    min-width: 60%;
+}
+
+a.lesson-link {
+    text-decoration: none;
+    color: rgb(244,67,54);
+}
+
+a.lesson-link:hover {
+    color: rgba(244,67,54, 0.8);
+}
+
+thead {
+    background-color: rgb(244,67,54);
+}
+
+th.table-header {
+    color: white;
+}
+
+.complete {
+    color: green;
+}
+
+.noncomplete {
+    color: gray;
+}
+
+.fa {
+    font-size: 2em;
+}

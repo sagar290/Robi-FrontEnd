@@ -1,0 +1,28 @@
+-var tally = 1;
+.quizcard.demo-card-wide.mdl-card.mdl-shadow--2dp
+  .mdl-card__title
+    h2.mdl-card__title-text #{question.question}
+  .mdl-card__supporting-text
+    label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='option-'+index+tally)
+      input.mdl-radio__button(id='option-'+index+tally type='radio', name='options'+index, checked='', value='a')
+      span.mdl-radio__label #{question.a}
+    - tally += 1;
+    label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='option-'+index+tally)
+      input.mdl-radio__button(id='option-'+index+tally type='radio', name='options'+index, checked='', value='b')
+      span.mdl-radio__label #{question.b}
+    - tally += 1;
+    label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='option-'+index+tally)
+      input.mdl-radio__button(id='option-'+index+tally type='radio', name='options'+index, checked='', value='c')
+      span.mdl-radio__label #{question.c}
+    - tally += 1;
+    label.mdl-radio.mdl-js-radio.mdl-js-ripple-effect(for='option-'+index+tally)
+      input.mdl-radio__button(id='option-'+index+tally type='radio', name='options'+index, checked='', value='d')
+      span.mdl-radio__label #{question.d}
+    - tally = 1;
+    
+  //- .mdl-card__actions.mdl-card--border
+  //-   a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect
+  //-     | Get Started
+  //- .mdl-card__menu
+  //-   button.mdl-button.mdl-button--icon.mdl-js-button.mdl-js-ripple-effect
+  //-     i.material-icons share

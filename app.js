@@ -42,6 +42,8 @@ app.use(morgan('dev'));
 app.use(passport.initialize());
 app.use(passport.session());
 
+require('./config/passport')(passport);
+
 /* Set up static path */
 app.use(express.static(path.join(__dirname, 'public')));
 

@@ -3,27 +3,36 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+      "node": "6.11.0"
+  },
+  "keywords": [
+    "heroku",
+    "10minuteschool",
+    "robi"
+  ],
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "*",
-    "connect-flash": "*",
+    "bcryptjs": "^2.4.3",
     "body-parser": "*",
+    "connect-flash": "*",
     "cookie-parser": "*",
-    "express-session": "*",
+    "express": "*",
     "express-messages": "*",
-    "passport": "*",
-    "passport-local": "*",
-    "passport-http": "*",
-    "bcryptjs": "*",
+    "express-session": "*",
+    "moment": "^2.18.1",
     "mongodb": "*",
     "mongoose": "*",
-    "pug": "*"
-
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "pug": "^2.0.0-rc.3"
   },
   "devDependencies": {
-      "morgan": "*"
+    "morgan": "*"
   },
   "author": "Rashed Doha",
   "license": "MIT"
